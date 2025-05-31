@@ -1,0 +1,112 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Norse-Bold;
+  src: url(fonts/Norse-Bold.otf);
+}
+
+body {
+  font-family: Norse-Bold;
+  display: flex;
+  height: 100vh;
+}
+
+/* Design Sidebar */
+.design-sidebar {
+  background-image: url(images/palm-leaves-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 40%;
+}
+
+.logo-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.31);
+  width: 100%;
+  margin-top: 100px;
+  padding: 10px;
+
+  img {
+    height: 75px;
+  }
+
+  span {
+    color: white;
+    font-size: 3rem;
+    padding-left: 2rem;
+  }
+}
+
+/* Form Section */
+.container {
+  background-color: rgb(249, 245, 239);
+  width: 80%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+form {
+  margin-top: 2rem;
+
+  p {
+    font-weight: 300;
+    font-size: 16px;
+  }
+}
+
+input {
+  width: 40ch;
+  line-height: 1.5rem;
+}
+
+label {
+  font-weight: 400;
+  font-size: 14px;
+  color: #404839;
+}
+
+fieldset {
+  border: none;
+}
+
+form fieldset {
+  margin-top: 2rem;
+}
+
+form fieldset {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+form fieldset div {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  margin-top: 1rem;
+  margin-bottom: 0.7rem;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #596D48;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+}
