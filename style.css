@@ -27,18 +27,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.31);
+  background-color: rgba(0, 0, 0, 0.365);
   width: 100%;
-  margin-top: 100px;
+  margin-top: 150px;
   padding: 10px;
 
   img {
-    height: 75px;
+    height: 85px;
   }
 
   span {
     color: white;
-    font-size: 3rem;
+    font-size: 4rem;
     padding-left: 2rem;
   }
 }
@@ -51,33 +51,49 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 5rem;
 }
 
 p {
   margin-bottom: 1rem;
   font-size: 20px;
   font-weight: 700;
+  padding: 1rem 5rem;
 }
 
 form {
-  margin-top: 2rem;
-
   p {
     font-weight: 300;
-    font-size: 16px;
+    font-size: 14px;
   }
+}
+
+.form-container {
+  padding: 1.5rem 5rem;
+  padding-right: 16rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  background-color:  rgb(251, 248, 245);
+  box-shadow: 5px 5px 9px rgb(210, 210, 210);;
 }
 
 input {
   width: 40ch;
+  padding: 0.1rem 0.5rem;
   line-height: 1.5rem;
+  border-radius: 5px;
+  border: 1px solid #E5E7EB;
+}
+
+input:focus {
+  outline: 1px solid rgb(64, 160, 224);
+  box-shadow: 2px 4px 5px rgb(210, 210, 210);
 }
 
 label {
-  font-weight: 400;
-  font-size: 14px;
+  font-weight: 200;
+  font-size: 12px;
   color: #404839;
+  margin-bottom: 3px;
 }
 
 fieldset {
@@ -100,8 +116,7 @@ form fieldset div {
 }
 
 button {
-  margin-top: 1rem;
-  margin-bottom: 0.7rem;
+  margin: 1rem 5rem;
   padding: 1rem 2rem;
   border-radius: 5px;
   border: none;
@@ -109,4 +124,17 @@ button {
   color: white;
   font-weight: 700;
   font-size: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #647e4c;
+}
+
+a {
+  color: #596D48;
+}
+
+#password:invalid, #confirm_password:invalid {
+  border: 1px solid red;
 }
